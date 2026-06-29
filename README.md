@@ -1,4 +1,4 @@
-# elite_teleop — Xbox Elite 2 controller → ROS 2 cmd_vel
+# elite_teleop — Xbox Elite 2 controller
 
 A lightweight ROS 2 teleop package for the **Xbox Elite Series 2** controller.
 Works over USB or Bluetooth ([xpadneo](https://github.com/atar-axis/xpadneo)).
