@@ -1,7 +1,6 @@
-# Python
+# Byte-compiled
 __pycache__/
 *.py[cod]
-*.pyo
 
 # ROS 2
 build/
@@ -11,6 +10,9 @@ log/
 # VS Code
 .vscode/
 
-# Python virtual environments
+# Python environments
 .venv/
 venv/
+
+# OS files
+.DS_Store
