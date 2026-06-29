@@ -1,0 +1,34 @@
+elite_teleop:
+  ros__parameters:
+    # ---- your controller map ----
+    axis_linear: 1          # left stick up/down  -> forward/back
+    axis_angular: 3         # right stick L/R     -> turn
+    axis_boost: 5           # RT  -> faster
+    axis_slow: 2            # LT  -> slower
+    button_enable: 5        # RB  -> TAP to toggle driving on/off
+    button_estop: 12        # P1  -> e-stop
+    button_estop_clear: 7   # Menu -> clear e-stop
+
+    # ---- message type -- IMPORTANT ----
+    # false = plain Twist  (default, works with most robots)
+    # true  = TwistStamped (set true if your robot driver requires it)
+    publish_stamped: false
+    frame_id: base_link
+
+    # ---- flip if a direction is backwards ----
+    invert_linear: false
+    invert_angular: false
+
+    # ---- speeds (m/s, rad/s) ----
+    linear_normal: 0.4
+    linear_turbo: 0.9
+    linear_creep: 0.12
+    angular_normal: 1.0
+    angular_creep: 0.4
+
+    # ---- feel + safety ----
+    deadzone: 0.12
+    linear_accel: 1.5
+    angular_accel: 3.0
+    publish_rate: 50.0
+    joy_timeout: 0.4

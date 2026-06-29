@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ROS 2
+build/
+install/
+log/
+
+# VS Code
+.vscode/
+
+# Python virtual environments
+.venv/
+venv/
